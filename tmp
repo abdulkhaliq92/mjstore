@@ -1,0 +1,106 @@
+Charge {
+  addresses: {
+    ethereum: '0x056a338c977009b0674e366fa419be29695a8b7b',
+    usdc: '0x056a338c977009b0674e366fa419be29695a8b7b',
+    bitcoin: '3DiE8mxtxiNFWfxkTajDjnhmaYyWcwBcPZ'
+  },
+  brand_color: '#122332',
+  brand_logo_url: '',
+  code: 'HH7ZBKJQ',
+  created_at: '2022-05-19T12:28:36Z',
+  description: 'idek edited',
+  exchange_rates: { 'BTC-USD': '29566.96', 'ETH-USD': '1962.255', 'USDC-USD': '1.0' },
+  expires_at: '2022-05-19T13:28:36Z',
+  fees_settled: true,
+  hosted_url: 'https://commerce.coinbase.com/charges/HH7ZBKJQ',
+  id: 'b1add51c-dbac-4cbe-be58-50b100ba428f',
+  local_exchange_rates: { 'BTC-USD': '29566.96', 'ETH-USD': '1962.255', 'USDC-USD': '1.0' },
+  logo_url: '',
+  metadata: {},
+  name: '@testPriv on lol2',
+  offchain_eligible: false,
+  organization_name: '',
+  payment_threshold: {
+    overpayment_absolute_threshold: { amount: '5.00', currency: 'USD' },
+    overpayment_relative_threshold: '0.005',
+    underpayment_absolute_threshold: { amount: '5.00', currency: 'USD' },
+    underpayment_relative_threshold: '0.005'
+  },
+  payments: [],
+  pricing: {
+    local: { amount: '1.00', currency: 'USD' },
+    ethereum: { amount: '0.000510000', currency: 'ETH' },
+    usdc: { amount: '1.000000', currency: 'USDC' },
+    bitcoin: { amount: '0.00003382', currency: 'BTC' }
+  },
+  pricing_type: 'fixed_price',
+  pwcb_only: false,
+  resource: 'charge',
+  support_email: 'vlnsd81@gmail.com',
+  timeline: [ { status: 'NEW', time: '2022-05-19T12:28:36Z' } ],
+  utxo: false
+}
+
+Charge {
+  addresses: {
+    ethereum: '0x056a338c977009b0674e366fa419be29695a8b7b',
+    usdc: '0x056a338c977009b0674e366fa419be29695a8b7b',
+    bitcoin: '3DiE8mxtxiNFWfxkTajDjnhmaYyWcwBcPZ'
+  },
+  brand_color: '#122332',
+  brand_logo_url: '',
+  code: 'HH7ZBKJQ',
+  created_at: '2022-05-19T12:28:36Z',
+  description: 'idek edited',
+  exchange_rates: { 'BTC-USD': '29566.96', 'ETH-USD': '1962.255', 'USDC-USD': '1.0' },
+  expires_at: '2022-05-19T13:28:36Z',
+  fees_settled: true,
+  hosted_url: 'https://commerce.coinbase.com/charges/HH7ZBKJQ',
+  id: 'b1add51c-dbac-4cbe-be58-50b100ba428f',
+  local_exchange_rates: { 'BTC-USD': '29566.96', 'ETH-USD': '1962.255', 'USDC-USD': '1.0' },
+  logo_url: '',
+  metadata: {},
+  name: '@testPriv on lol2',
+  offchain_eligible: false,
+  organization_name: '',
+  payment_threshold: {
+    overpayment_absolute_threshold: { amount: '5.00', currency: 'USD' },
+    overpayment_relative_threshold: '0.005',
+    underpayment_absolute_threshold: { amount: '5.00', currency: 'USD' },
+    underpayment_relative_threshold: '0.005'
+  },
+  payments: [
+    {
+      payment_id: '3cf0814c-3365-4be6-b026-dfc62baa8dc0',
+      network: 'bitcoin',
+      transaction_id: 'df02a32bc4bfd0faeb43327caaa7cd908c375f85572afc76b043b4097b2d2ffc',
+      status: 'PENDING',
+      detected_at: '2022-05-19T12:31:00Z',
+      value: [Object],
+      block: [Object],
+      deposited: [Object],
+      coinbase_processing_fee: [Object],
+      net: [Object]
+    }
+  ],
+  pricing: {
+    local: { amount: '1.00', currency: 'USD' },
+    ethereum: { amount: '0.000510000', currency: 'ETH' },
+    usdc: { amount: '1.000000', currency: 'USDC' },
+    bitcoin: { amount: '0.00003382', currency: 'BTC' }
+  },
+  pricing_type: 'fixed_price',
+  pwcb_only: false,
+  resource: 'charge',
+  support_email: 'vlnsd81@gmail.com',
+  timeline: [
+    { status: 'NEW', time: '2022-05-19T12:28:36Z' },
+    {
+      status: 'PENDING',
+      time: '2022-05-19T12:31:00Z',
+      payment: [Object]
+    }
+  ],
+  utxo: true
+}
+

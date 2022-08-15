@@ -1,0 +1,179 @@
+POST http://localhost:4444/newPassword
+Content-Type: application/json
+
+{
+    "password":"test"
+}
+###
+
+POST http://localhost:4444/register
+Content-Type: application/json
+
+{
+    "pass":"nemo",
+    "user":"nemo22",
+    "email":"test22222@test.com"
+}
+
+###
+POST http://localhost:4444/login
+Content-Type: application/json
+
+{
+    "user":"nemo22",
+    "password":"nemo"
+}
+
+###
+POST http://localhost:4444/listHandle
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im5lbW9BZG1pbiIsInBlcm1pc3Npb25zIjozLCJpYXQiOjE2NDkyMTc0MTgsImV4cCI6MTY0OTMwMzgxOH0.KhWW4wYGtLuCK2EzTvA2E9F-37JF-5s64EAMWSlG778
+
+{
+    "handle": "testEdit",
+    "platform": "lol2",
+    "price":1,
+    "isPrivate":false,
+    "info":"idek"
+}
+
+###
+GET http://localhost:4444/allHandles
+###
+GET http://localhost:4444/privateHandles
+###
+GET http://localhost:4444/protected
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6ImxvbCIsInBlcm1pc3Npb25zIjoxLCJpYXQiOjE2NDkxOTc1NTUsImV4cCI6MTY0OTIwMTE1NX0.p8vf5c59eNHQVyjQzX6f589JEjqctgNnxxacbduxb_k
+###
+GET http://localhost:4444/isAdmin
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im5lbW9BZG1pbiIsInBlcm1pc3Npb25zIjozLCJpYXQiOjE2NDkyMDY0NjIsImV4cCI6MTY0OTIxMDA2Mn0.cRWtjsN8SKaVPcyzJUhN4bUWZXSnjIMIEwDXp0exyyM
+###
+POST http://localhost:4444/createAdmin
+Content-Type: application/json
+
+{
+    "auth":"8f5c292bfe689435079567d08f340cfed750a2e01617563fbb734d0afa042b7879686cb9c701ab660a8471e436e3366486f5b28f1ff71dae7060cd70923d9d3c",
+    "user":"heron",
+    "pass":"pass",
+    "email":"n223313223a@gmail.com"
+
+}
+###
+POST http://localhost:4444/banUser
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im5lbW9BZG1pbiIsInBlcm1pc3Npb25zIjozLCJpYXQiOjE2NDkyMDk0OTAsImV4cCI6MTY0OTI5NTg5MH0.S--CeW7NFuR9Er3kXr55wm1_7x_NoN2UqSdEVoRpf6s
+
+{
+    "userToBan":"nemoBan"
+}
+###
+GET http://localhost:4444/allUsers
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im5lbW8yMiIsInBlcm1MZXZlbCI6MSwiaWF0IjoxNjQ5NzY1NzIzLCJleHAiOjE2NDk3NjkzMjN9.Orxc3dlo2OI7e934HOBISPH66_cAcGESN62pv1NND8E
+###
+POST http://localhost:4444/editHandleInfo
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im5lbW9BZG1pbiIsInBlcm1pc3Npb25zIjozLCJpYXQiOjE2NDkyMTc0MTgsImV4cCI6MTY0OTMwMzgxOH0.KhWW4wYGtLuCK2EzTvA2E9F-37JF-5s64EAMWSlG778
+
+{
+    "handle": "1337",
+    "platform": "TikTok",
+    "info":"idek edited v2"
+}
+###
+POST http://localhost:4444/editHandlePrice
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im5lbW9BZG1pbiIsInBlcm1pc3Npb25zIjozLCJpYXQiOjE2NDkyMTc0MTgsImV4cCI6MTY0OTMwMzgxOH0.KhWW4wYGtLuCK2EzTvA2E9F-37JF-5s64EAMWSlG778
+
+{
+    "handle": "testEdit",
+    "platform": "lol2",
+    "price":2
+}
+###
+POST http://localhost:4444/submitTicket
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im5lbW8yMiIsInBlcm1MZXZlbCI6MSwiaWF0IjoxNjQ5Mzk3MzIyLCJleHAiOjE2NDk0MDA5MjJ9.rjRNw1YoWJ7BSrHKdDmimUn7fXipfg9qD3CjSZwaA1g
+Content-Type: application/json
+
+{
+    "ticketContent": "Hello world lol2222"
+}
+###
+POST http://localhost:4444/replyTicket
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im5lbW8yMiIsInBlcm1MZXZlbCI6MSwiaWF0IjoxNjQ5Mzk3MzIyLCJleHAiOjE2NDk0MDA5MjJ9.rjRNw1YoWJ7BSrHKdDmimUn7fXipfg9qD3CjSZwaA1g
+Content-Type: application/json
+
+{
+    "tid": 5602720870742,
+    "reply": "lol"
+}
+###
+GET http://localhost:4444/openTickets
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im5lbW9BZG1pbiIsInBlcm1MZXZlbCI6MiwiaWF0IjoxNjQ5Mzk1ODAyLCJleHAiOjE2NDkzOTk0MDJ9.dg8bSmDKBgr6M0ueZxBUZGOSMoyW8PXe8FEMXkDS9PQ
+###
+POST http://localhost:4444/privateCode
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im5lbW8iLCJwZXJtTGV2ZWwiOjEsImlhdCI6MTY0OTc3MTA4OSwiZXhwIjoxNjQ5Nzc0Njg5fQ.KiTmq1mALAeE5Oa-9KVOHuVggYrGBFxV3fX6ZZjgLIw
+Content-Type: application/json
+
+{
+    "user": "nemo"
+}
+###
+POST http://localhost:4444/checkCode
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Im5lbW8yMiIsInBlcm1MZXZlbCI6MSwiaWF0IjoxNjQ5NzY2NDE3LCJleHAiOjE2NDk3NzAwMTd9.FatUOEzfWnHgrVaARp8IXeieaAWUHPwnkOFP_m14DyA
+Content-Type: application/json
+
+{
+    "code": "nWbuUUfl4kCLxL"
+}
+###
+POST http://localhost:4444/createCheckout
+Content-Type: application/json
+
+{
+    "name":"@handle",
+    "desc":"wow",
+    "price": "100"
+}
+
+###
+POST http://localhost:4444/createCharge
+Content-Type: application/json
+
+{
+    "handle":"eee",
+    "platform":"TikTok",
+    "price": "100"
+}
+###
+      
+POST http://localhost:4444/handleByName
+Content-Type: application/json
+
+{
+    "handle":"eee",
+    "platform":"TikTok"
+}
+###
+GET http://localhost:4444/allCharges
+###
+GET http://localhost:4444/qoq
+###
+
+GET http://localhost:4444/allAuctions
+###
+GET http://localhost:4444/allCheckouts
+
+###
+POST http://localhost:4444/filter
+Content-Type: application/json
+
+{
+    "like": "hell"
+}
+###
+GET http://localhost:4444/allHandles
+###
+GET http://localhost:4444/exchange/CNY
+###
+GET http://localhost:4444/currentUser
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Imhlcm9uIiwicGVybUxldmVsIjo0LCJpYXQiOjE2NTU3NDA1MzgsImV4cCI6MTY1NjM0NTMzOH0.7Ibyxve8VqFs3vMSGJ20Z8xH5kHqBnRNqrQoLPs4G28
